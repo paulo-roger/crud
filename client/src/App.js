@@ -50,7 +50,16 @@ function App() {
         <button className='register-input' onClick={() => handleClickButton()}>Cadastrar</button>
       </div>
       {typeof listUsers !== "undefined" && listUsers.map((value) => {
-        return <Card key={value.id}></Card>
+        return (
+          <Card 
+            key={value.id}
+            listCard={listUsers}
+            setListCard={allUsers}
+            id={value.id}
+            name={value.name}
+            surname={value.surname}          
+          ></Card>
+        )
       })}
     </div>
   );

@@ -1,0 +1,17 @@
+.card-container {
+    width: 250px;
+    border: 3px solid #000000;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.card-container:hover {
+    background-image: none;
+    background-color: #9fb1cc;
+}
+
+.p {
+    background-image: none;
+}
